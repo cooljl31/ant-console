@@ -9,12 +9,14 @@
     "clean": "node scripts/clean.js",
     "asset": "node scripts/asset.js",
     "build": "npm run clean;npm run asset;NODE_ENV=production node scripts/build.js",
-    "build_win": "set NODE_ENV=production && npm run clean && npm run asset && node scripts/build.js"
+    "build_win": "set NODE_ENV=production && npm run clean && npm run asset && node scripts/build.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "src": "src",
   "dependencies": {
     "antd": "^0.10.0",
-    "babel": "5.8.23",
+    "babel": "6.0.0",
     "fbjs": "^0.4.0",
     "flux": "^2.1.1",
     "history": "^1.12.5",
@@ -26,7 +28,8 @@
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0",
     "reqwest": "^2.0.5",
-    "selectn": "^0.10.0"
+    "selectn": "^0.10.0",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
@@ -59,5 +62,6 @@
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "~1.12.0",
     "webpack-hot-middleware": "^2.4.1"
-  }
+  },
+  "snyk": true
 }
