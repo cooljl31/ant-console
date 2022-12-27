@@ -20,7 +20,7 @@
     "history": "^1.12.5",
     "js-cookie": "^2.0.4",
     "less": "^2.5.3",
-    "less-loader": "^2.2.1",
+    "less-loader": "^6.0.0",
     "object-assign": "^4.0.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
